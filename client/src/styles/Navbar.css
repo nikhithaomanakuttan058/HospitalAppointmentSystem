@@ -1,0 +1,374 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  background: #0f4c81;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+}
+
+.logo {
+  min-width: 0;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.logo span {
+  display: block;
+  color: #dbeafe;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+
+/* ===========================
+   MENU ICON
+=========================== */
+
+.menu-icon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.menu-icon:hover {
+  color: #dbeafe;
+  transform: scale(1.1);
+}
+
+
+/* ===========================
+   TOP LOGIN AND REGISTER
+=========================== */
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.top-login-btn,
+.top-register-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.top-login-btn {
+  color: #0077b6;
+  background-color: white;
+  border: 1px solid #0077b6;
+}
+
+.top-login-btn:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+.top-register-btn {
+  color: white;
+  background-color: #0077b6;
+  border: 1px solid white;
+}
+
+.top-register-btn:hover {
+  background-color: #005f8f;
+  color: white;
+}
+
+.top-login-btn svg,
+.top-register-btn svg {
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -360px;
+  width: 340px;
+  height: 100vh;
+  background: white;
+  transition: left 0.4s ease;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+
+/* ===========================
+   CLOSE BUTTON
+=========================== */
+
+.close-btn {
+  text-align: right;
+  font-size: 28px;
+  padding: 20px;
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
+.close-btn svg {
+  transition: color 0.3s ease;
+}
+
+.close-btn svg:hover {
+  color: #2563eb;
+}
+
+
+/* ===========================
+   SIDEBAR HEADER
+=========================== */
+
+.sidebar-header {
+  padding: 25px;
+  text-align: center;
+}
+
+.hospital-logo {
+  width: 90px;
+  height: 90px;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  margin: 0 auto 15px;
+}
+
+.sidebar-header h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.sidebar-header p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: #f4f7fb;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+
+/* ===========================
+   MENU LINKS
+=========================== */
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 30px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  padding-left: 40px;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.sidebar-footer {
+  padding: 25px;
+  margin-top: 20px;
+  background: #eff6ff;
+}
+
+.sidebar-footer h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.sidebar-footer p {
+  color: #555;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.social-icons svg {
+  font-size: 22px;
+  color: #2563eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icons svg:hover {
+  transform: translateY(-5px);
+  color: #1d4ed8;
+}
+
+
+/* ===========================
+   OVERLAY
+=========================== */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1500;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navbar-left {
+    gap: 12px;
+  }
+
+  .logo h2 {
+    font-size: 22px;
+  }
+
+  .logo span {
+    font-size: 11px;
+  }
+
+  .menu-icon {
+    font-size: 26px;
+  }
+
+  .navbar-buttons {
+    gap: 5px;
+  }
+
+  .top-login-btn,
+  .top-register-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .top-login-btn svg,
+  .top-register-btn svg {
+    font-size: 9px;
+  }
+
+  .sidebar {
+    width: 280px;
+    left: -280px;
+  }
+}
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width: 500px) {
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .logo span {
+    font-size: 9px;
+  }
+
+  .menu-icon {
+    font-size: 23px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-left {
+    gap: 8px;
+  }
+
+  .navbar-buttons {
+    gap: 4px;
+  }
+
+  .top-login-btn,
+  .top-register-btn {
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+
+  .top-login-btn svg,
+  .top-register-btn svg {
+    font-size: 8px;
+  }
+}

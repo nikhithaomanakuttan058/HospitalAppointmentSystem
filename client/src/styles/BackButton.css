@@ -1,0 +1,37 @@
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  background: white;
+  color: #0f4c81;
+
+  border: 1px solid #0f4c81;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  /* Position on the left side below navbar */
+  margin-top: 95px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.back-button:hover {
+  background: #0f4c81;
+  color: white;
+}
+
+.back-button svg {
+  font-size: 12px;
+}

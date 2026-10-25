@@ -1,0 +1,226 @@
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about {
+  background: #ffffff;
+  padding: 140px 50px 80px;
+}
+
+.about-content,
+.history,
+.mission,
+.vision,
+.values,
+.trust,
+.timeline,
+.about-cta {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 42px;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* ===========================
+   VALUE CARDS
+=========================== */
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.value-card {
+  background: #eff6ff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  transition: .3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
+
+.value-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  margin: 0;
+}
+
+/* ===========================
+   TRUST SECTION
+=========================== */
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.trust-grid div {
+  background: #eff6ff;
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a8a;
+  transition: .3s;
+}
+
+.trust-grid div:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.about-stats {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: #eff6ff;
+  padding: 35px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  transition: .3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h3 {
+  color: #2563eb;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.timeline-item {
+  position: relative;
+  background: #eff6ff;
+  padding: 25px;
+  border-left: 5px solid #2563eb;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.timeline-item h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.about-cta {
+  background: linear-gradient(135deg,#2563eb,#1e3a8a);
+  padding: 60px;
+  border-radius: 20px;
+  color: white;
+}
+
+.about-cta h2 {
+  color: white;
+}
+
+.about-cta p {
+  color: #e5e7eb;
+}
+
+.about-btn {
+  margin-top: 30px;
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.about-btn:hover {
+  background: #dbeafe;
+  transform: translateY(-4px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.value-grid,
+.about-stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+padding:120px 20px 60px;
+}
+
+.about h2{
+font-size:32px;
+}
+
+.about p{
+font-size:16px;
+}
+
+.value-grid,
+.about-stats,
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+.about-cta{
+padding:40px 20px;
+}
+
+}

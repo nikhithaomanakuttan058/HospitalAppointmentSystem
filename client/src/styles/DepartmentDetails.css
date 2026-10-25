@@ -1,0 +1,142 @@
+/* ===========================
+   DEPARTMENT DETAILS
+=========================== */
+
+.department-details{
+    margin-top:78px;
+}
+
+/* ===========================
+   TOP BANNER
+=========================== */
+
+.department-banner{
+    background:linear-gradient(rgba(15,52,96,.75),rgba(29,78,216,.75)),
+               url("../assets/images/doctors-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:90px 30px;
+}
+
+.department-banner img{
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.department-banner h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.department-banner p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+    color:#eef5ff;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services-section{
+    padding:80px 50px;
+    background:#f8fbff;
+    text-align:center;
+}
+
+.services-section h2{
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:45px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.service-box{
+    background:#ffffff;
+    border-radius:15px;
+    padding:22px;
+    font-size:17px;
+    font-weight:500;
+    color:#444;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(37,99,235,.18);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.doctor-btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.doctor-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.department-banner{
+    padding:70px 20px;
+}
+
+.department-banner img{
+    width:100%;
+    max-width:300px;
+    height:180px;
+}
+
+.department-banner h1{
+    font-size:34px;
+}
+
+.department-banner p{
+    font-size:16px;
+}
+
+.services-section{
+    padding:60px 20px;
+}
+
+.services-section h2{
+    font-size:30px;
+}
+
+.service-grid{
+    grid-template-columns:1fr;
+}
+
+}
